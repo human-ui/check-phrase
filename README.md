@@ -1,8 +1,15 @@
 # check-phrase
 
-Which article should I use? Use AI to help you out.
+Which article should I use? Use AI to help you out!
 
-Demo: `http://check-phrase.appspot.com`
+Demo: [https://check-phrase.appspot.com]()
+
+Basic idea:
+
+- Take a good transformer-based model that can fill in blanks in text. We used RoBERTa (thanks to the awesome [transformers](https://github.com/huggingface/transformers) library!).
+- Get the model's top guesses what word is missing in a sentence.
+- See if the filled in word is most confidently *a(n)*, *the* or some other word, in which case we guess that no article should be present. 
+
 
 # How to set it up for yourself
 
