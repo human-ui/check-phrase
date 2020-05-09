@@ -2,7 +2,7 @@
 
 Which article should I use? Use AI to help you out!
 
-Demo: [https://check-phrase.appspot.com]()
+Demo: [https://check-phrase.appspot.com](https://check-phrase.appspot.com)
 
 Basic idea:
 
