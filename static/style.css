@@ -1,0 +1,26 @@
+body {
+  font-family: "helvetica", sans-serif;
+  font-size: medium;
+}
+textarea {
+  display: block;
+  font-family: "helvetica", sans-serif;
+  padding: 5px;
+  width: 400px;
+}
+button {
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 2.5;
+}
+.radio_button {
+  display: inline;
+  line-height: 3;
+  padding-right: 10px;
+}
+.output {
+  max-width: 400px;
+  background-color: lightgray;
+  padding: 5px;
+  margin-top: 10px;
+}

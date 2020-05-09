@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>a(n), the, or no article?</title>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+  <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+  <h1>a(n), the, or no article?</h1>
+
+  <form action="/" method="POST">
+
+    <textarea name="inp" rows="3" autofocus="true">{{ inp }}</textarea>
+    </textarea>
+
+    <div class="radio_button">
+      <input type="radio" name="options" id="article" value="article" {{ checked['article'] }} />
+      <label for="article">Article</label>
+    </div>
+
+    <div class="radio_button">
+      <input type="radio" name="options" id="any_word" value="any_word" {{ checked['any_word'] }} />
+      <label for="any_word">Any word</label>
+    </div>
+
+    <div>
+      <button type="submit">Fill in!</button>
+    </div>
+
+  </form>
+
+  <div class="output">
+    <p>{{ part1 }} <strong>{{ fill_in }}</strong> {{ part2 }}</p>
+
+    <ul>
+      {% for score in scores %}
+      <li>{{ score }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+
+</body>
+
+</html>
